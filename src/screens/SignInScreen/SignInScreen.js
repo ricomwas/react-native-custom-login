@@ -37,64 +37,64 @@ const SignInScreen = () => {
 
 
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.root}>
-      <View style={styles.logo}>
-        <Logo height={height * 0.3}/>
-      </View> 
-      
-      <CustomInput
-        placeholder="username"
-        value={username}
-        setValue={setUsername}
-      />
+        <View style={styles.logo}>
+          <Logo height={height * 0.3}/>
+        </View> 
+        
+        <CustomInput
+          placeholder="username"
+          value={username}
+          setValue={setUsername}
+        />
 
-      <CustomInput
-        placeholder="password"
-        value={password}
-        setValue={setPassword}
-        secureTextEntry={true}
-      />
+        <CustomInput
+          placeholder="password"
+          value={password}
+          setValue={setPassword}
+          secureTextEntry={true}
+        />
 
-      <CustomButton
-        text="Sign In"
-        onPress={onSignInPressed}
-      />
-      
-      <CustomButton
-        text="Forgot Password"
-        onPress={onForgotPasswordPressed}
-        type="TERTIARY"
-      />
+        <CustomButton
+          text="Sign In"
+          onPress={onSignInPressed}
+        />
+        
+        <CustomButton
+          text="Forgot Password"
+          onPress={onForgotPasswordPressed}
+          type="TERTIARY"
+        />
 
-      <CustomButton
-        text="Sign In with Facebook"
-        onPress={onSignInFacebook}
-        bgColor="#E7EAF4"
-        fgColor="#4765A9"
-      />
+        <CustomButton
+          text="Sign In with Facebook"
+          onPress={onSignInFacebook}
+          bgColor="#E7EAF4"
+          fgColor="#4765A9"
+        />
 
-      <CustomButton
-        text="Sign In with Google"
-        onPress={onSignInGoogle}
-        bgColor="#FAE9EA"
-        fgColor="#DD4D44"
-      />
+        <CustomButton
+          text="Sign In with Google"
+          onPress={onSignInGoogle}
+          bgColor="#FAE9EA"
+          fgColor="#DD4D44"
+        />
 
-      <CustomButton
-        text="Sign In with Twitter"
-        onPress={onSignInTwitter}
-        bgColor="#E3E3E3"
-        fgColor="#363636"
-      />
+        <CustomButton
+          text="Sign In with Twitter"
+          onPress={onSignInTwitter}
+          bgColor="#E3E3E3"
+          fgColor="#363636"
+        />
 
-      <CustomButton
-        text="Don`t have an account? Create one"
-        onPress={onSignUpPress}
-        type="TERTIARY"
-      />
+        <CustomButton
+          text="Don`t have an account? Create one"
+          onPress={onSignUpPress}
+          type="TERTIARY"
+        />
 
-    </View>
+      </View>
       
     </ScrollView>
     
@@ -107,10 +107,10 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   }, 
   logo: {
-    width: '40%',
+    width: '50%',
     maxWidth: 300,
     maxHeight: 300,
-    margin: 20
+    /* margin: 20 */
 
   }
 });

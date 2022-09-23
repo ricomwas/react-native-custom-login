@@ -21,10 +21,11 @@ const CustomButton = ({ onPress, text, type = "PRIMARY", bgColor, fgColor}) => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#3B71F3',
-    width: 400,
+    width: '95%',
     alignItems: 'center',
-    padding: 20,
-    margin: 10,
+    padding: 15,
+    /* margin: 10, */
+    marginVertical: 15,
     borderRadius: 25
   },
   container_PRIMARY: {
