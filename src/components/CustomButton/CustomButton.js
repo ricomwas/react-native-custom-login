@@ -20,7 +20,6 @@ const CustomButton = ({ onPress, text, type = "PRIMARY", bgColor, fgColor}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#3B71F3',
     width: '95%',
     alignItems: 'center',
     padding: 15,
@@ -29,7 +28,11 @@ const styles = StyleSheet.create({
     borderRadius: 25
   },
   container_PRIMARY: {
-    
+    backgroundColor: '#3B71F3',
+  },
+  container_SECONDARY: {
+    borderColor: '#3B71F3',
+    borderWidth: 1,
   },
   container_TERTIARY: {
     backgroundColor: '#fff'
@@ -40,7 +43,11 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   text_TERTIARY: {
-    color: 'gray'
+    color: 'gray',
+    fontWeight: 'bold'
+  },
+  text_SECONDARY: {
+    color: '#3B71F3'
   }
 
 })

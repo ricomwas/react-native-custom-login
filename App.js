@@ -14,7 +14,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import SignInScreen from './src/screens/SignInScreen';
+import Navigation from './src/Navigation';
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
 
@@ -23,7 +23,8 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.root}>
-      <SignInScreen />
+     {/*  <SignInScreen /> */}
+      <Navigation />
     </SafeAreaView>
   );
 };
