@@ -3,7 +3,7 @@ import React from 'react'
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SignInScreen from '../screens/SignInScreen';
-import SignUpScreen from '../screens/SIgnUpScreen';
+import SignUpScreen from '../screens/SignUpScreen'
 import ConfirmationEmailScreen from '../screens/ConfirmEmailScreen';
 import ForgotPasswordScreen from '../screens/ForgotPasswordScreen';
 import NewPasswordScreen from '../screens/NewPasswordScreen';
